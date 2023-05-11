@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact - Daan van Valkenburg</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.typekit.net/vhk1hlo.css">
+  <link rel="stylesheet" href="contact.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src="contact.js" type="text/javascript"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
+</head>
+<body>
+
+<div class="menu">
+  <img src="../../images/Logo04.png" alt="Logo" style="width: 60px; height: 60px;">
+  <div class="spacer"></div>
+  <div class="item">
+    <div class="text"><a href="../index.html" class="link">Home</a></div>
+  </div>
+  <div class="item">
+    <div class="text"><a href="../PagePortfolio/portfolio.html" class="link">Portfolio</a></div>
+  </div>
+  <div class="item">
+    <div class="text"><a href="../PageGear/gear.html" class="link">Gear</a></div>
+  </div>
+  <div class="item">
+    <div class="text"><a href="../PageLightroom/lightroom.html" class="link">Lightroom</a></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="item">
+    <div class="text"><a href="../PageShop/shop.html" class="link">Shop</a></div>
+  </div>
+  <div class="item">
+    <div class="text"><a href="../PageAccount/account.html" class="link">Account</a></div>
+  </div>
+  <div class="item">
+    <div class="text"><a href="../PageContact/contact.html" class="link">Contact</a></div>
+  </div>
+  <div class="item">
+    <div class="text"><a href="../PageAbout/about.html" class="link">About</a></div>
+  </div>
+</div>
+
+<div class="auth-center">
+  <div class="auth__inner auth-size">
+    <div class="auth__sidebar auth__inner__section"></div>
+    <div class="auth__form auth__inner__section">
+      <div class="form">
+        <h1 class="form__title" id="wb-text">Contact me</h1>
+        <div id="form">
+          <label class="form__label"><span class="form__label__text">Name</span>
+            <input class="form__input" type="text" name="name" id="name" placeholder="James May">
+            <div class="form__input-border"></div>
+          </label>
+          <label class="form__label"><span class="form__label__text">Discord ID</span>
+            <input class="form__input" type="text" name="discord_id" id="discord_id" placeholder="James#1234">
+            <div class="form__input-border"></div>
+          </label>
+          <label class="form__label"><span class="form__label__text">Message</span>
+            <textarea class="form__input" style="resize:none;" name="message" id="content" placeholder="Do you have any recommendations for a 85mm canon ef lens?"></textarea>
+            <div class="form__input-border"></div>
+          </label>
+          <input class="button" type="submit" id="Submit" value="Send">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

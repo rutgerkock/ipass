@@ -1,0 +1,137 @@
+:root {
+    --background-color: rgb(20, 20, 20);
+    --highlight-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+}
+
+.spacer {
+    height: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-left: 60px;
+    position: fixed;
+}
+.item {
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+.text, .description, .form__title, .form__input, .form__label__text, .button {
+    color:rgb(93, 93, 93);
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    white-space: nowrap;
+    transition: ease 0.2s;
+}
+
+.text:hover{
+    transition: ease 0.2s;
+    transform: translateX(10px);
+    color: var(--highlight-color);
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.link:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.auth-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 50px;
+
+}
+.auth-size {
+    max-height: 44vw;
+    max-width: 66vw;
+    height: 44vw;
+    width: 66vw;
+}
+
+.auth__inner {
+    display: flex;
+    overflow: hidden;
+    background: rgb(40,40,40);
+    border-radius: 10px;
+}
+
+.form__title {
+    font-size: 1.125rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 1vw 1vw 1vw 1vw;
+}
+
+.form__input, .form__label__text, .button {
+    transition: ease 0.3s;
+    border: none;
+    border-radius: 3px;
+    margin: 1vw 1vw 0 1vw;
+    bottom: 1vw;
+}
+
+.form__input::placeholder{
+    opacity: 65%;
+    font-style: oblique;
+}
+
+.form__input:hover, .form__label__text:hover {
+    border-bottom: 5px solid white;
+}
+.button:hover {
+    border-top: 5px solid white;
+}
+
+.form__input {
+    background-color: var(--background-color);
+    border: 0;
+    border-bottom: 2px solid transparent;
+    display: block;
+    outline: 0;
+    position: relative;
+    width: 64vw;
+    height: 35px;
+}
+
+.form__label__text {
+    background: rgb(40,40,40);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.form__label__text, .form__input {
+    margin-bottom: 10px;
+}
+.form__input#content {
+    height: 22vw;
+}
+
+.button {
+    position: absolute;
+    width: 64vw;
+    height: 3vw;
+    font-size: 20px;
+    background-color: var(--background-color);
+}
