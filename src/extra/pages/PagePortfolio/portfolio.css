@@ -1,47 +1,4 @@
-:root {
-    --background-color: rgb(20, 20, 20);
-    --highlight-color: rgb(255, 255, 255);
-}
-
-
-
-body {
-    background-color: var(--background-color);
-    display: flex;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--background-color);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color:rgb(93, 93, 93);
-    border-radius: 10px;
-}
-
-.spacer {
-    height: 30px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 60px;
-    margin-top: 60px;
-    margin-left: 60px;
-    position: fixed;
-}
-.item {
-    cursor: pointer;
-    margin: 4px 0;
-}
-
-.text, .description, .download-button, .dialog {
+.description, .download-button, .dialog, .light-mode-buttons button {
     color:rgb(93, 93, 93);
     font-family: "futura-pt", sans-serif;
     font-weight: 400;
@@ -51,24 +8,6 @@ body {
     transition: ease 0.2s;
 }
 
-.text:hover{
-    transition: ease 0.2s;
-    transform: translateX(10px);
-    color: var(--highlight-color);
-}
-
-.link{
-    text-decoration: none;
-    color: inherit;
-}
-.link:visited{
-    text-decoration: none;
-    color: inherit;
-}
-
-.scroll-container {
-
-}
 
 .image-wrapper {
     position: relative;
@@ -102,56 +41,6 @@ body {
 .image-link img {
     transition: 0.15s ease-in-out;
 
-}
-
-dialog {
-    background-color: rgb(40, 40, 40);
-    width: 85vw;
-    height: 43vw;
-    position: absolute;
-    z-index: 1000;
-    border: none;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-}
-
-dialog::backdrop {
-    background-color: rgb(60,60,60);
-    opacity: 0.9;
-}
-
-dialog img {
-    width: 64.3vw;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
-
-dialog p {
-    color:rgb(93, 93, 93);
-    font-family: "futura-pt", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    white-space: nowrap;
-    bottom: 0.3vw;
-    left: 66.3vw;
-    position: absolute;
-}
-
-.close-button {
-    width: 21px;
-    height: 21px;
-    right: 1vw;
-    top: 1vw;
-    position: absolute;
-    filter: grayscale(1);
-    transition: ease-in-out 0.1s;
-    border-radius: 0;
-}
-
-.close-button:hover {
-    filter: grayscale(0);
 }
 
 .download-button {

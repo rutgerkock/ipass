@@ -1,33 +1,4 @@
-:root {
-    --background-color: rgb(20, 20, 20);
-    --highlight-color: rgb(255, 255, 255);
-}
-
-body {
-    background-color: var(--background-color);
-    display: flex;
-}
-
-.spacer {
-    height: 30px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 60px;
-    margin-top: 60px;
-    margin-left: 60px;
-    position: fixed;
-}
-
-.item {
-    cursor: pointer;
-    margin: 4px 0;
-}
-
-.text, .next, .prev, .light-mode-buttons button {
+.next, .prev, .light-mode-buttons button {
     color:rgb(93, 93, 93);
     font-family: "futura-pt", sans-serif;
     font-weight: 400;
@@ -35,22 +6,6 @@ body {
     font-size: 20px;
     white-space: nowrap;
     transition: ease 0.2s;
-}
-
-.text:hover {
-    transition: ease 0.2s;
-    color: var(--highlight-color);
-    transform: translateX(10px);
-}
-
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.link:visited {
-    text-decoration: none;
-    color: inherit;
 }
 
 * {
